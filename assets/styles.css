@@ -72,7 +72,7 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family: var(--font-body);
-  font-size: var(--step-1);
+  font-size: 1.1875rem;
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   text-underline-offset: 0.18em;
@@ -126,7 +126,7 @@ hr {
 
 strong { font-weight: 650; }
 
-small { font-size: 0.85rem; }
+small { font-size: 0.9125rem; }
 
 .container {
   width: 100%;
@@ -190,7 +190,7 @@ small { font-size: 0.85rem; }
 .site-nav a {
   position: relative;
   padding: 0.35rem 0.45rem;
-  font-size: 0.95rem;
+  font-size: 1.0125rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--muted);
@@ -234,7 +234,7 @@ small { font-size: 0.85rem; }
     justify-content: center;
     padding-bottom: var(--space-1);
   }
-  .site-nav a { font-size: 0.82rem; letter-spacing: 0.05em; }
+  .site-nav a { font-size: 0.8825rem; letter-spacing: 0.05em; }
 }
 
 /* ————————————————— sections ————————————————— */
@@ -382,7 +382,7 @@ main { display: block; }
 
 .card p {
   color: var(--muted);
-  font-size: 1rem;
+  font-size: 1.0625rem;
   margin-bottom: 0;
 }
 
@@ -409,7 +409,7 @@ main { display: block; }
 }
 
 .fact dt {
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
   text-transform: uppercase;
   letter-spacing: 0.13em;
   color: var(--muted);
@@ -431,7 +431,7 @@ main { display: block; }
 .button {
   display: inline-block;
   font-family: var(--font-body);
-  font-size: 1rem;
+  font-size: 1.0625rem;
   font-weight: 600;
   letter-spacing: 0.02em;
   line-height: 1.2;
@@ -529,13 +529,15 @@ main { display: block; }
   gap: var(--space-3);
 }
 
+.form-trap { position: absolute; left: -9999px; }
+
 .field {
   display: grid;
   gap: var(--space-1);
 }
 
 .field label {
-  font-size: 0.82rem;
+  font-size: 0.8825rem;
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -546,7 +548,7 @@ main { display: block; }
 .field select,
 .field textarea {
   font: inherit;
-  font-size: 1rem;
+  font-size: 1.0625rem;
   color: var(--text);
   background: var(--surface);
   border: 1px solid var(--line-strong);
@@ -596,7 +598,7 @@ main { display: block; }
 
 .quote cite {
   font-style: normal;
-  font-size: 0.85rem;
+  font-size: 0.9125rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--muted);
@@ -610,7 +612,7 @@ main { display: block; }
   background: var(--ink);
   color: var(--ink-muted);
   padding-block: var(--space-5) var(--space-4);
-  font-size: 0.95rem;
+  font-size: 1.0125rem;
 }
 
 .site-footer h2,
@@ -636,7 +638,7 @@ main { display: block; }
   padding-top: var(--space-3);
   border-top: 1px solid color-mix(in srgb, var(--ink-text) 14%, transparent);
   color: color-mix(in srgb, var(--ink-muted) 85%, transparent);
-  font-size: 0.8rem;
+  font-size: 0.8625rem;
   line-height: 1.8;
 }
 
