@@ -28,8 +28,8 @@
       <h1>Book a table and find us</h1>
       <p>Two kitchens, one dining room — Persian and Italian, cooked side by side. We're forty-eight seats on Fortess Road, five minutes downhill from Kentish Town station. Here is everything you need to be sitting down with a drink by eight.</p>
       <p>
-        <a class="button button-primary" href="mailto:hello@nimaandnonna.co.uk?subject=Table%20booking">Email a booking</a>
-        <a class="button button-secondary" href="tel:+442079460813">Call +44 20 7946 0813</a>
+        <a class="button button-primary" href="mailto:hello@example.com?subject=Table%20booking">Email a booking</a>
+        <a class="button button-secondary" href="tel:02079460813">Call 020 7946 0813</a>
       </p>
       <img src="assets/restaurant-front-night.jpg" width="5848" height="3899" alt="The lit shopfront of Nima &amp; Nonna on Fortess Road at night, with a dark painted facade and warm light through the window">
     </div>
@@ -42,11 +42,11 @@
       <ul class="card-grid">
         <li class="card">
           <h3>By phone</h3>
-          <p>Ring <a href="tel:+442079460813">+44 20 7946 0813</a> between 10am and 10pm, Tuesday to Sunday. Before 5pm you'll get whoever is prepping; after 5pm you'll get the host stand. If it rings out we're carrying plates — leave a message with a name, a number, a date and a headcount and we call back the same evening.</p>
+          <p>Ring <a href="tel:02079460813">020 7946 0813</a> between 10am and 10pm, Tuesday to Sunday. Before 5pm you'll get whoever is prepping; after 5pm you'll get the host stand. If it rings out we're carrying plates — leave a message with a name, a number, a date and a headcount and we call back the same evening.</p>
         </li>
         <li class="card">
           <h3>By email</h3>
-          <p>Write to <a href="mailto:hello@nimaandnonna.co.uk">hello@nimaandnonna.co.uk</a> with your date, time, number of people and anything we should know — a birthday, a wheelchair, a six-month-old, a nut allergy. We reply within one working day and your table isn't held until you have that reply in writing.</p>
+          <p>Write to <a href="mailto:hello@example.com">hello@example.com</a> with your date, time, number of people and anything we should know — a birthday, a wheelchair, a six-month-old, a nut allergy. We reply within one working day and your table isn't held until you have that reply in writing.</p>
         </li>
         <li class="card">
           <h3>Walking in</h3>
@@ -82,7 +82,7 @@
   <section class="section">
     <div class="container">
       <h2>Finding us</h2>
-      <p>42 Fortess Road, Kentish Town, London NW5 2HB. Dark green frontage, brass numbers, two olive trees in pots that we drag in every November.</p>
+      <p>Fortess Road, Kentish Town, London. Dark green frontage, brass numbers, two olive trees in pots that we drag in every November.</p>
       <svg viewBox="0 0 320 120" width="320" height="120" role="img" aria-labelledby="walkTitle walkDesc">
         <title id="walkTitle">Walking route from Kentish Town station to Nima &amp; Nonna</title>
         <desc id="walkDesc">A simple line diagram: Kentish Town station, then 400 metres along Fortess Road, arriving at Nima and Nonna after about six minutes on foot.</desc>
@@ -91,7 +91,7 @@
         <circle cx="296" cy="60" r="9" fill="#9B2226"></circle>
         <text x="24" y="36" text-anchor="start" font-family="Georgia, serif" font-size="13" fill="#23201C">Kentish Town</text>
         <text x="160" y="36" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#5B5247">400m · 6 min walk</text>
-        <text x="296" y="90" text-anchor="end" font-family="Georgia, serif" font-size="13" fill="#23201C">No. 42</text>
+        <text x="296" y="90" text-anchor="end" font-family="Georgia, serif" font-size="13" fill="#23201C">Our door</text>
       </svg>
       <h3>Trains and tubes</h3>
       <p><strong>Kentish Town</strong> (Northern line, and Thameslink to St Pancras and Blackfriars) is the closest — leave by the Fortess Road exit, turn right, keep walking for six minutes and we're on your left just past the launderette. <strong>Kentish Town West</strong> on the Overground is nine minutes away across the high street. <strong>Tufnell Park</strong> (Northern line) is ten minutes downhill, which is the easier direction to walk it.</p>
@@ -144,7 +144,7 @@
         </li>
         <li class="card">
           <h3>How to arrange it</h3>
-          <p>Email <a href="mailto:hello@nimaandnonna.co.uk">hello@nimaandnonna.co.uk</a> with the date, the number and any dietary needs. We take a £15 per head deposit and confirm final numbers 72 hours before. Vegetarian, vegan and gluten-free versions of both menus exist and cost the same.</p>
+          <p>Email <a href="mailto:hello@example.com">hello@example.com</a> with the date, the number and any dietary needs. We take a £15 per head deposit and confirm final numbers 72 hours before. Vegetarian, vegan and gluten-free versions of both menus exist and cost the same.</p>
         </li>
       </ul>
     </div>
@@ -154,7 +154,9 @@
     <div class="container">
       <h2>Send us a booking request</h2>
       <p>Fill this in and it lands in the same inbox as everything else. We'll write back to confirm — the table isn't yours until we do.</p>
-      <form class="form" action="mailto:hello@nimaandnonna.co.uk" method="post" enctype="text/plain">
+      <form class="form" method="post" action="http://127.0.0.1:3002/api/f/c24b57d3-8cfc-4be6-a8b8-807ddfc6413e">
+        <input type="hidden" name="_page" value="visit.html">
+        <p class="form-trap" aria-hidden="true"><label>Leave this empty<input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label></p>
         <div class="field">
           <label for="name">Your name</label>
           <input id="name" name="name" type="text" autocomplete="name">
@@ -181,7 +183,7 @@
         </div>
         <div class="field">
           <label for="notes">Allergies, occasions, access needs, anything else</label>
-          <input id="notes" name="notes" type="text">
+          <textarea id="notes" name="notes" rows="4"></textarea>
         </div>
         <button class="button button-primary" type="submit">Send request</button>
       </form>
@@ -192,9 +194,9 @@
     <div class="container">
       <h2>Everything, in one place</h2>
       <p><strong>Nima &amp; Nonna</strong><br>
-      42 Fortess Road, Kentish Town, London NW5 2HB<br>
-      <a href="tel:+442079460813">+44 20 7946 0813</a><br>
-      <a href="mailto:hello@nimaandnonna.co.uk">hello@nimaandnonna.co.uk</a></p>
+      Fortess Road, Kentish Town, London<br>
+      <a href="tel:02079460813">020 7946 0813</a><br>
+      <a href="mailto:hello@example.com">hello@example.com</a></p>
       <p>Bookings, press, lost coats and supplier enquiries all come to the same address. Have a look at what's cooking before you decide.</p>
       <p>
         <a class="button button-primary" href="menu.html">Read the menu</a>
@@ -207,9 +209,9 @@
 
 <footer class="site-footer">
   <div class="container">
-    <p>Nima &amp; Nonna · 42 Fortess Road, Kentish Town, London NW5 2HB · <a href="tel:+442079460813">+44 20 7946 0813</a> · <a href="mailto:hello@nimaandnonna.co.uk">hello@nimaandnonna.co.uk</a></p>
+    <p>Nima &amp; Nonna · Fortess Road, Kentish Town, London · <a href="tel:02079460813">020 7946 0813</a> · <a href="mailto:hello@example.com">hello@example.com</a></p>
     <p>Closed Mondays. Kitchen stops thirty minutes before the door does.</p>
-    <p><small>© 2024 Nima &amp; Nonna. All rights reserved. <a href="https://www.pexels.com">Photographs via Pexels</a></small></p>
+    <p><small>© 2026 Nima &amp; Nonna. All rights reserved. <a href="https://www.pexels.com">Photographs via Pexels</a></small></p>
   </div>
 </footer>
 </body>
